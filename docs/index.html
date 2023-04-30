@@ -16,6 +16,11 @@
             padding: 0;
         }
 
+        :root {
+            --bg-color: #fff;
+            --text-color: #333;
+        }
+
         body {
             font-family: sans-serif;
             font-size: 16px;
@@ -25,15 +30,44 @@
             padding: 1rem;
         }
 
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        :root.dark {
+            --bg-color: #333;
+            --text-color: rgb(153, 149, 149);
+
+        }
+
+        :root.dark h2 {
+            color: #ddd;
+        }
+
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #333;
+                --text-color: #fff;
+            }
+        }
+
         h1,
-        h2,
         h3 {
+
             color: #333;
             margin-top: 2rem;
         }
 
+        h2 {
+            font-size: 200%;
+            color: #4a9074;
+            margin-top: 30px;
+        }
+
         a {
-            color: #1a0dab;
+            color: #095c4e;
             text-decoration: none;
             transition: color 0.3s ease;
         }
@@ -133,6 +167,7 @@
     <header>
         <h1>Yassine Fekih</h1>
     </header>
+    
 
     <main>
         <h2>À propos
@@ -225,20 +260,34 @@
 
             <h2>Mes projets</h2>
             <p>Retrouvez différents projets réalisés dans le cadre de mes études ou personnellement.</p>
-            <ul>
-                <li><a href="#">Othello Game</a></li>
-                <li><a href="#">Web Project 1</a></li>
-                <li><a href="#">Web Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
+            <ul style="list-style-type: disc; margin-left: 2rem;">
+                <li><strong><a href="https://github.com/snaazy/othello">Othello Game</a></strong></li>
+                <div class="project-description" style="margin-left: 2rem;">
+                    <p>Implémentation en <strong>Java</strong> du jeu <a
+                            href="https://fr.wikipedia.org/wiki/Othello_(jeu)">Othello (ou Reversi)</a>. <br>Pas
+                        d'interface graphique, ça se joue directement dans la console en entrant les coordonnées de
+                        chaque case.<br> Possibilité de jouer contre un joueur humain mais également contre l'ordinateur
+                        naïf (i.e. aléatoire), ou bien intelligent, en utilisant l'algorithme du <a
+                            href="https://fr.wikipedia.org/wiki/Algorithme_minimax#:~:text=L%27algorithme%20minimax%20(aussi%20appelé,dans%20le%20pire%20des%20cas).">MinMax.</a>
+                    </p>
+                </div>
+                <li><strong><a href="#">Web Project 1</a></strong></li>
+                <li><strong><a href="#">Web Project 2</a></strong></li>
+                <li><strong><a href="#">Project 3</a></strong></li>
             </ul>
 
-            <h2>Mes réseaux</h2>
-            <div class="social-icons">
-                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
+
     </main>
+
+    <script>
+        const toggleDarkModeBtn = document.querySelector('#toggle-dark-mode');
+
+        toggleDarkModeBtn.addEventListener('click', () => {
+            const rootEl = document.querySelector(':root');
+            rootEl.classList.toggle('dark');
+        });
+
+    </script>
 </body>
 
 </html>
