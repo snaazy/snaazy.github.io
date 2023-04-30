@@ -2,37 +2,68 @@
 <html lang="fr">
 
 <head>
+    <meta name="generator" content="Hugo 0.111.3">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-vvfzj9bSPQ2QoSWGmGRXwMwGQQ8Hsz2NE/VoPpbYFvVtWAK8tfcR1nTewNYaKP72" crossorigin="anonymous">
-
-   
-    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-vvfzj9bSPQ2QoSWGmGRXwMwGQQ8Hsz2NE/VoPpbYFvVtWAK8tfcR1nTewNYaKP72" crossorigin="anonymous">
+    <title>Yassine Fekih</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
+        /* General */
+        * {
+            box-sizing: border-box;
             margin: 0;
-            padding: 1rem;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
             max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
+            margin: 0 auto;
+            padding: 1rem;
         }
 
         h1,
-        h2 {
+        h2,
+        h3 {
             color: #333;
+            margin-top: 2rem;
         }
 
         a {
             color: #1a0dab;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         a:hover {
-            text-decoration: underline;
+            color: #333;
         }
 
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-top: 1rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        /* Main */
         #profile-picture {
             border-radius: 50%;
             width: 150px;
@@ -40,60 +71,174 @@
             object-fit: cover;
             margin-top: 1rem;
         }
+
+        p {
+            margin-top: 1rem;
+            text-align: justify;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 2rem;
+        }
+
+        .language {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+
+        .language i {
+            margin-right: 0.5rem;
+        }
+
+        /* Social */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 1;
+            margin-right: 1rem;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icons a:hover {
+            background-color: #1a0dab;
+        }
+
+        .social-icons i {
+            display: block;
+        }
+
+        .social-icons .fab {
+            font-size: 1.2rem;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <!--  <img id="profile-picture" src=""alt="Photo de profil"> -->
-        <h1>{{ .Site.Title }}</h1>
+        <h1>Yassine Fekih</h1>
     </header>
 
     <main>
-        <h2>À propos de moi</h2>
+        <h2>À propos
+            de moi</h2>
         <p>En tant qu'étudiant en informatique, j'ai une grande passion pour son aspect théorique. Au fil de mes études,
             j'ai été fasciné par les différents domaines théoriques tels que la théorie des langages formels, la théorie
-            des graphes, les mathématiques discrètes, et bien d'autres encore.
-
-            Actuellement, je suis engagé dans des études en informatique et je suis très motivé pour approfondir mes
+            des graphes, les mathématiques discrètes, et bien d'autres encore.</p>
+        <p>Actuellement, je suis engagé dans des études en informatique et je suis très motivé pour approfondir mes
             connaissances dans ce domaine. Mon objectif est de contribuer à la communauté de l'informatique théorique à
-            l'avenir.
-        </p>
-
+            l'avenir.</p>
         <h2>Compétences</h2>
 
-<h3>Langages de programmation</h3>
+        <h3>Langages de programmation</h3>
 
-    <ul>
-        <li style="display: inline-block;"><i class="fab fa-python fa-fw"></i> Python,</li>
-        <li style="display: inline-block;"><i class="fab fa-java"></i> Java,</li>
-        <li style="display: inline-block;"><i class="fab fa-js"></i> JavaScript,</li>
-        <li style="display: inline-block;"><i class="fab fa-cuttlefish"></i> C,</li>
-        <li style="display: inline-block;"><i class="fab fa-osi"></i> OCaml,</li>
-        <li style="display: inline-block;"><i class="fab fa-php"></i> PHP</li>
-    </ul>
-
-<p>Je ne maîtrise pas totalement ces langages, mais ce sont des langages que j'étudie actuellement, et que j'utilise souvent.</p>
-
-        <h2>Mes projets</h2>
-        Retrouvez différents projets réalisés dans le cadre de mes études ou personnellement.
         <ul>
-            <li><a href="#">Othello Game</a></li>
-            <li><a href="#">Web Project 1</a></li>
-            <li><a href="#">Web Project 2</a></li>
-            <li><a href="#">Project 3</a></li>
+            <li style="display: inline-block;"> <svg height="24" viewBox="0 0 512 512" width="24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M314,36.38c-18.59-3.06-45.8-4.47-64.27-4.38a311.09,311.09,0,0,0-51.66,4.38c-45.74,8-54.07,24.7-54.07,55.54V128H256v16H107.62C66.06,144,32.33,193.67,32,255.12c0,.29,0,.58,0,.88a162.91,162.91,0,0,0,3.13,32c9.29,46.28,38.23,80,72.49,80H128V314c0-31.3,20.84-59.95,55-66.1l9.87-1.23H314a56.05,56.05,0,0,0,15.06-2A52.48,52.48,0,0,0,368,193.68V91.92C368,63,343.32,41.19,314,36.38ZM194.93,105.5a20.37,20.37,0,1,1,20.3-20.3A20.29,20.29,0,0,1,194.93,105.5Z" />
+                    <path
+                        d="M475.28,217c-10.7-42.61-38.41-73-70.9-73H386.67v47.45c0,39.57-26,68.22-57.74,73.13a63.54,63.54,0,0,1-9.69.75H198.08a60,60,0,0,0-15.23,1.95C160.54,273.14,144,291.7,144,315.77V417.54c0,29,29.14,46,57.73,54.31,34.21,9.95,71.48,11.75,112.42,0,27.19-7.77,53.85-23.48,53.85-54.31V384H256V368H404.38c29.44,0,54.95-24.93,67.45-61.31A156.83,156.83,0,0,0,480,256,160.64,160.64,0,0,0,475.28,217ZM316.51,404a20.37,20.37,0,1,1-20.3,20.3A20.29,20.29,0,0,1,316.51,404Z" />
+                </svg> Python,</li>
+            <li style="display: inline-block;"> <svg height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639" />
+                </svg></i> Java,</li>
+            <li style="display: inline-block;"> <svg height="24" viewBox="0 0 512 512" width="24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M32,32V480H480V32ZM272,380c0,43.61-25.76,64.87-63.05,64.87-33.68,0-53.23-17.44-63.15-38.49h0l34.28-20.75c6.61,11.73,11.63,21.65,26.06,21.65,12,0,21.86-5.41,21.86-26.46V240h44Zm99.35,63.87c-39.09,0-64.35-17.64-76.68-42h0L329,382c9,14.74,20.75,24.56,41.5,24.56,17.44,0,27.57-7.72,27.57-19.75,0-14.43-10.43-19.54-29.68-28l-10.52-4.52c-30.38-12.92-50.52-29.16-50.52-63.45,0-31.57,24.05-54.63,61.64-54.63,26.77,0,46,8.32,59.85,32.68L396,290c-7.22-12.93-15-18-27.06-18-12.33,0-20.15,7.82-20.15,18,0,12.63,7.82,17.74,25.86,25.56l10.52,4.51c35.79,15.34,55.94,31,55.94,66.16C441.12,424.13,411.35,443.87,371.35,443.87Z" />
+                </svg> JavaScript,</li>
+            <li style="display: inline-block;"> <svg id="Layer_1" height="24"
+                    style="enable-background:new 0 0 404 396.115051;" version="1.1" viewBox="0 0 404 396.115051"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #000000;
+                        }
+
+                        .st1 {
+                            fill: #000000;
+                        }
+
+                        .st2 {
+                            fill: #000000;
+                        }
+
+                        .st3 {
+                            fill: #FFFFFF;
+                        }
+                    </style>
+                    <path class="st0"
+                        d="M351.106995,284.144501C353.507996,279.985504,355,275.2995,355,271.091522v-146.069  c0-4.208-1.48999-8.892998-3.891998-13.052002L202,198.057526L351.106995,284.144501z" />
+                    <path class="st1"
+                        d="M215.25,367.0755l126.5-73.033997c3.644012-2.104004,6.955994-5.737,9.356995-9.897003L202,198.057526  L52.893002,284.145508c2.400997,4.158997,5.714001,7.792999,9.356998,9.895996l126.5,73.033997  C196.037003,371.283508,207.962997,371.283508,215.25,367.0755z" />
+                    <path class="st2"
+                        d="M351.108002,111.969513c-2.402008-4.159996-5.714996-7.792999-9.358002-9.897003l-126.5-73.033997  c-7.287003-4.208-19.212997-4.208-26.5,0l-126.5,73.033997C54.961998,106.279518,49,116.607513,49,125.022514v146.069  c0,4.207977,1.491001,8.893982,3.893002,13.052979L202,198.057526L351.108002,111.969513z" />
+                    <g>
+                        <path class="st3"
+                            d="M202,300.057495c-56.242996,0-102-45.756989-102-101.999985S145.757004,96.057503,202,96.057503   c36.291992,0,70.139008,19.529999,88.330994,50.96801l-44.143005,25.544006   c-9.104996-15.736008-26.037994-25.512009-44.188004-25.512009c-28.121994,0-51,22.878006-51,51c0,28.121002,22.878006,51,51,51   c18.151993,0,35.085007-9.776001,44.190994-25.514999l44.143005,25.542999   C272.141998,280.52652,238.294006,300.057495,202,300.057495z" />
+                    </g>
+                    <g></g>
+                    <g></g>
+                </svg> C,</li>
+            <li style="display: inline-block;"> <img height="24" src="https://www.svgrepo.com/show/342081/ocaml.svg">
+                OCaml,</li>
+            <li style="display: inline-block;"> <svg height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z" />
+                </svg>PHP</li>
+
         </ul>
 
-        <h2>Mes réseaux</h2>
-        <div class="social-icons">
-            
-            
-            
-        </div>
+        <p>Je ne maîtrise pas totalement ces langages, mais ce sont des langages que j'étudie actuellement, et que
+            j'utilise souvent. <br> J'utilise/ai utilisé également certains frameworks tels que :</p>
+        <ul>
+            <li style="display: inline-block;"> <svg height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.197 1.608l.003-.006h-4.425L12 6.4v.002l-2.772-4.8H4.803v.005H0l12 20.786L24 1.608" />
+                </svg>Vue.js,</li>
+            <li style="display: inline-block;"><svg height="24" viewBox="0 0 512 512"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M504.4,115.83a5.72,5.72,0,0,0-.28-.68,8.52,8.52,0,0,0-.53-1.25,6,6,0,0,0-.54-.71,9.36,9.36,0,0,0-.72-.94c-.23-.22-.52-.4-.77-.6a8.84,8.84,0,0,0-.9-.68L404.4,55.55a8,8,0,0,0-8,0L300.12,111h0a8.07,8.07,0,0,0-.88.69,7.68,7.68,0,0,0-.78.6,8.23,8.23,0,0,0-.72.93c-.17.24-.39.45-.54.71a9.7,9.7,0,0,0-.52,1.25c-.08.23-.21.44-.28.68a8.08,8.08,0,0,0-.28,2.08V223.18l-80.22,46.19V63.44a7.8,7.8,0,0,0-.28-2.09c-.06-.24-.2-.45-.28-.68a8.35,8.35,0,0,0-.52-1.24c-.14-.26-.37-.47-.54-.72a9.36,9.36,0,0,0-.72-.94,9.46,9.46,0,0,0-.78-.6,9.8,9.8,0,0,0-.88-.68h0L115.61,1.07a8,8,0,0,0-8,0L11.34,56.49h0a6.52,6.52,0,0,0-.88.69,7.81,7.81,0,0,0-.79.6,8.15,8.15,0,0,0-.71.93c-.18.25-.4.46-.55.72a7.88,7.88,0,0,0-.51,1.24,6.46,6.46,0,0,0-.29.67,8.18,8.18,0,0,0-.28,2.1v329.7a8,8,0,0,0,4,6.95l192.5,110.84a8.83,8.83,0,0,0,1.33.54c.21.08.41.2.63.26a7.92,7.92,0,0,0,4.1,0c.2-.05.37-.16.55-.22a8.6,8.6,0,0,0,1.4-.58L404.4,400.09a8,8,0,0,0,4-6.95V287.88l92.24-53.11a8,8,0,0,0,4-7V117.92A8.63,8.63,0,0,0,504.4,115.83ZM111.6,17.28h0l80.19,46.15-80.2,46.18L31.41,63.44Zm88.25,60V278.6l-46.53,26.79-33.69,19.4V123.5l46.53-26.79Zm0,412.78L23.37,388.5V77.32L57.06,96.7l46.52,26.8V338.68a6.94,6.94,0,0,0,.12.9,8,8,0,0,0,.16,1.18h0a5.92,5.92,0,0,0,.38.9,6.38,6.38,0,0,0,.42,1v0a8.54,8.54,0,0,0,.6.78,7.62,7.62,0,0,0,.66.84l0,0c.23.22.52.38.77.58a8.93,8.93,0,0,0,.86.66l0,0,0,0,92.19,52.18Zm8-106.17-80.06-45.32,84.09-48.41,92.26-53.11,80.13,46.13-58.8,33.56Zm184.52,4.57L215.88,490.11V397.8L346.6,323.2l45.77-26.15Zm0-119.13L358.68,250l-46.53-26.79V131.79l33.69,19.4L392.37,178Zm8-105.28-80.2-46.17,80.2-46.16,80.18,46.15Zm8,105.28V178L455,151.19l33.68-19.4v91.39h0Z" />
+                </svg> Laravel,</li>
+            <li style="display: inline-block;"><svg height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 9.861A2.139 2.139 0 1 0 12 14.139 2.139 2.139 0 1 0 12 9.861zM6.008 16.255l-.472-.12C2.018 15.246 0 13.737 0 11.996s2.018-3.25 5.536-4.139l.472-.119.133.468a23.53 23.53 0 0 0 1.363 3.578l.101.213-.101.213a23.307 23.307 0 0 0-1.363 3.578l-.133.467zM5.317 8.95c-2.674.751-4.315 1.9-4.315 3.046 0 1.145 1.641 2.294 4.315 3.046a24.95 24.95 0 0 1 1.182-3.046A24.752 24.752 0 0 1 5.317 8.95zM17.992 16.255l-.133-.469a23.357 23.357 0 0 0-1.364-3.577l-.101-.213.101-.213a23.42 23.42 0 0 0 1.364-3.578l.133-.468.473.119c3.517.889 5.535 2.398 5.535 4.14s-2.018 3.25-5.535 4.139l-.473.12zm-.491-4.259c.48 1.039.877 2.06 1.182 3.046 2.675-.752 4.315-1.901 4.315-3.046 0-1.146-1.641-2.294-4.315-3.046a24.788 24.788 0 0 1-1.182 3.046zM5.31 8.945l-.133-.467C4.188 4.992 4.488 2.494 6 1.622c1.483-.856 3.864.155 6.359 2.716l.34.349-.34.349a23.552 23.552 0 0 0-2.422 2.967l-.135.193-.235.02a23.657 23.657 0 0 0-3.785.61l-.472.119zm1.896-6.63c-.268 0-.505.058-.705.173-.994.573-1.17 2.565-.485 5.253a25.122 25.122 0 0 1 3.233-.501 24.847 24.847 0 0 1 2.052-2.544c-1.56-1.519-3.037-2.381-4.095-2.381zM16.795 22.677c-.001 0-.001 0 0 0-1.425 0-3.255-1.073-5.154-3.023l-.34-.349.34-.349a23.53 23.53 0 0 0 2.421-2.968l.135-.193.234-.02a23.63 23.63 0 0 0 3.787-.609l.472-.119.134.468c.987 3.484.688 5.983-.824 6.854a2.38 2.38 0 0 1-1.205.308zm-4.096-3.381c1.56 1.519 3.037 2.381 4.095 2.381h.001c.267 0 .505-.058.704-.173.994-.573 1.171-2.566.485-5.254a25.02 25.02 0 0 1-3.234.501 24.674 24.674 0 0 1-2.051 2.545zM18.69 8.945l-.472-.119a23.479 23.479 0 0 0-3.787-.61l-.234-.02-.135-.193a23.414 23.414 0 0 0-2.421-2.967l-.34-.349.34-.349C14.135 1.778 16.515.767 18 1.622c1.512.872 1.812 3.37.824 6.855l-.134.468zM14.75 7.24c1.142.104 2.227.273 3.234.501.686-2.688.509-4.68-.485-5.253-.988-.571-2.845.304-4.8 2.208A24.849 24.849 0 0 1 14.75 7.24zM7.206 22.677A2.38 2.38 0 0 1 6 22.369c-1.512-.871-1.812-3.369-.823-6.854l.132-.468.472.119c1.155.291 2.429.496 3.785.609l.235.02.134.193a23.596 23.596 0 0 0 2.422 2.968l.34.349-.34.349c-1.898 1.95-3.728 3.023-5.151 3.023zm-1.19-6.427c-.686 2.688-.509 4.681.485 5.254.987.563 2.843-.305 4.8-2.208a24.998 24.998 0 0 1-2.052-2.545 24.976 24.976 0 0 1-3.233-.501zM12 16.878c-.823 0-1.669-.036-2.516-.106l-.235-.02-.135-.193a30.388 30.388 0 0 1-1.35-2.122 30.354 30.354 0 0 1-1.166-2.228l-.1-.213.1-.213a30.3 30.3 0 0 1 1.166-2.228c.414-.716.869-1.43 1.35-2.122l.135-.193.235-.02a29.785 29.785 0 0 1 5.033 0l.234.02.134.193a30.006 30.006 0 0 1 2.517 4.35l.101.213-.101.213a29.6 29.6 0 0 1-2.517 4.35l-.134.193-.234.02c-.847.07-1.694.106-2.517.106zm-2.197-1.084c1.48.111 2.914.111 4.395 0a29.006 29.006 0 0 0 2.196-3.798 28.585 28.585 0 0 0-2.197-3.798 29.031 29.031 0 0 0-4.394 0 28.477 28.477 0 0 0-2.197 3.798 29.114 29.114 0 0 0 2.197 3.798z" />
+                </svg>React</li>
+
+
+            <h2>Mes projets</h2>
+            <p>Retrouvez différents projets réalisés dans le cadre de mes études ou personnellement.</p>
+            <ul>
+                <li><a href="#">Othello Game</a></li>
+                <li><a href="#">Web Project 1</a></li>
+                <li><a href="#">Web Project 2</a></li>
+                <li><a href="#">Project 3</a></li>
+            </ul>
+
+            <h2>Mes réseaux</h2>
+            <div class="social-icons">
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
     </main>
-
-   
-
 </body>
 
 </html>
