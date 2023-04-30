@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-vvfzj9bSPQ2QoSWGmGRXwMwGQQ8Hsz2NE/VoPpbYFvVtWAK8tfcR1nTewNYaKP72" crossorigin="anonymous">
+
+   
     <title>{{ .Title }}</title>
     <style>
         body {
@@ -13,9 +17,11 @@
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            text-align: center;
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             color: #333;
         }
 
@@ -26,35 +32,68 @@
         a:hover {
             text-decoration: underline;
         }
+
+        #profile-picture {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 1rem;
+        }
     </style>
 </head>
+
 <body>
     <header>
+        <!--  <img id="profile-picture" src=""alt="Photo de profil"> -->
         <h1>{{ .Site.Title }}</h1>
     </header>
 
     <main>
         <h2>À propos de moi</h2>
-        <p>En tant qu'étudiant en informatique, j'ai une grande passion pour son aspect théorique. Au fil de mes études, j'ai été fasciné par les différents domaines théoriques tels que la théorie des langages formels, la théorie des graphes, les mathématiques discrètes, et bien d'autres encore.
+        <p>En tant qu'étudiant en informatique, j'ai une grande passion pour son aspect théorique. Au fil de mes études,
+            j'ai été fasciné par les différents domaines théoriques tels que la théorie des langages formels, la théorie
+            des graphes, les mathématiques discrètes, et bien d'autres encore.
 
-            Actuellement, je suis engagé dans des études en informatique et je suis très motivé pour approfondir mes connaissances dans ce domaine. Mon objectif est de contribuer à la communauté de l'informatique théorique à l'avenir.
+            Actuellement, je suis engagé dans des études en informatique et je suis très motivé pour approfondir mes
+            connaissances dans ce domaine. Mon objectif est de contribuer à la communauté de l'informatique théorique à
+            l'avenir.
         </p>
 
         <h2>Compétences</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ul>
+
+<h3>Langages de programmation</h3>
+
+    <ul>
+        <li style="display: inline-block;"><i class="fab fa-python fa-fw"></i> Python,</li>
+        <li style="display: inline-block;"><i class="fab fa-java"></i> Java,</li>
+        <li style="display: inline-block;"><i class="fab fa-js"></i> JavaScript,</li>
+        <li style="display: inline-block;"><i class="fab fa-cuttlefish"></i> C,</li>
+        <li style="display: inline-block;"><i class="fab fa-osi"></i> OCaml,</li>
+        <li style="display: inline-block;"><i class="fab fa-php"></i> PHP</li>
+    </ul>
+
+<p>Je ne maîtrise pas totalement ces langages, mais ce sont des langages que j'étudie actuellement, et que j'utilise souvent.</p>
 
         <h2>Mes projets</h2>
+        Retrouvez différents projets réalisés dans le cadre de mes études ou personnellement.
         <ul>
-            <li><a href="https://github.com/mon-nom-dutilisateur/projet1">Projet 1</a></li>
-            <li><a href="https://github.com/mon-nom-dutilisateur/projet2">Projet 2</a></li>
+            <li><a href="#">Othello Game</a></li>
+            <li><a href="#">Web Project 1</a></li>
+            <li><a href="#">Web Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
         </ul>
 
-        <h2>Contactez-moi</h2>
-        <p>Vous pouvez me contacter par e-mail à monadresse@email.com.</p>
+        <h2>Mes réseaux</h2>
+        <div class="social-icons">
+            
+            
+            
+        </div>
     </main>
+
+   
+
 </body>
+
 </html>
