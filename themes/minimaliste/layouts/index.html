@@ -35,23 +35,7 @@
             color: var(--text-color);
         }
 
-        :root.dark {
-            --bg-color: #333;
-            --text-color: rgb(153, 149, 149);
-
-        }
-
-        :root.dark h2 {
-            color: #ddd;
-        }
-
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #333;
-                --text-color: #fff;
-            }
-        }
+       
 
         h1,
         h3 {
@@ -271,9 +255,15 @@
                             href="https://fr.wikipedia.org/wiki/Algorithme_minimax#:~:text=L%27algorithme%20minimax%20(aussi%20appelé,dans%20le%20pire%20des%20cas).">MinMax.</a>
                     </p>
                 </div>
-                <li><strong><a href="#">Web Project 1</a></strong></li>
-                <li><strong><a href="#">Web Project 2</a></strong></li>
-                <li><strong><a href="#">Project 3</a></strong></li>
+                <li><strong><a href="#">Regular Expression Game <i>(en cours)</i></a></strong></li>
+                <div class="project-description" style="margin-left: 2rem;">
+                    <p>
+                        Le but de ce projet est de créer un Wordle, mais pour des <a href="https://fr.wikipedia.org/wiki/Langage_formel">expressions rationnelles. </a> <br>
+                        L'utilisateur entre une expression rationnelle (d'une taille donnée), et le programme vérifie si l'expression entrée est correct. <br>
+                        Il faudra donc créer un automate à partir de l'expression entrée, de même pour le langage secret, et vérifier si les deux automates sont équivalents, en faisant les opérations nécessaires sur les automates (complétion, déterminisation, minimisation, intersection...) <br>
+
+                    </p>
+                </div>
             </ul>
 
 
